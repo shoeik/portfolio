@@ -1,0 +1,19 @@
+.project-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.project-image {
+  margin-bottom: 2.4rem;
+}
+.project-image.sp {
+  width: 31.6666666667%;
+}
+.project-title {
+  margin-bottom: 2.4rem;
+}
+.project-text {
+  margin-bottom: 2.4rem;
+}
+.project-term {
+  color: var(--primary-color);
+}/*# sourceMappingURL=project.css.map */

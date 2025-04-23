@@ -1,0 +1,31 @@
+.form {
+  display: none;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  font-weight: bold;
+}
+.form-require {
+  color: #d74343;
+  border: 1px solid #000;
+}
+.form textarea {
+  height: 10em;
+}
+.form-input {
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  width: 100%;
+}
+.form-input:focus {
+  border: 1px solid #606060;
+}
+.form-input::placeholder {
+  color: #727272;
+}
+.form .error-message {
+  color: #d74343;
+}/*# sourceMappingURL=contact.css.map */
