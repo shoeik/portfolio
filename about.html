@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORKS｜KAJIYA PORTFOLIO</title>
+    <title>ABOUT｜KAJIYA PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
 </head>
-
-<body class="page page--sub page-works">
+	
+<body class="page page--sub page-about">
 	<header id="header" class="header">
 		<div class="l-inner header__inner">
 			<h1 class="header__logo logo">
@@ -51,62 +51,155 @@
 	</header>
 	<header class="page-head">
 		<div class="page-head__inner">
-			<h1 class="page-head__title">works</h1>
-
+			<h1 class="page-head__title">about</h1>
 			<nav class="breadcrumb" aria-label="breadcrumb">
 				<ol class="breadcrumb__list">
 					<li class="breadcrumb__item">
 						<a href="/" class="breadcrumb__link">home</a>
 					</li>
 					<li class="breadcrumb__item breadcrumb__item--current">
-						<a href="/works" class="breadcrumb__link">works</a>
+						<a href="/about" class="breadcrumb__link">about</a>
 					</li>
 				</ol>
 			</nav>
 		</div>
 	</header>
-	<main class="page-main works">
-		<section class="page-works">
-			<div class="works__inner">
-				<ul class="works-list">
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/sakurai.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/yamakawa.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
-				</ul>
+	<main class="page-main about">
+		<header class="about__hero">
+			<div class="about__inner">
+				<div class="about__intro">
+					<!-- <p class="about__eyebrow">Frontend / UI / Animation</p> -->
+					<h2 class="about__headline">UIとアニメーション実装を中心に活動している、Webフロントエンド制作者です。</h2>
+					<p class="about__lead">
+						デザインの意図を正確に汲み取り、SCSS / BEM による保守性の高いコーディングと、
+						軽量で気持ちの良いUIアニメーションを組み合わせた実装を行っています。
+					</p>
+				</div>
+				<div class="">
+					<p class="">Front-end Developer</p>
+					<p class="">加治屋 翔英</p>
+					<div class="about__content">
+						<p class="about__text">
+							デザインの意図を崩さないことを最優先に、読みやすさ・使いやすさを軸に実装します。
+							不要なアニメーションは入れず、目的に合う動きだけを採用します。
+						</p>
+						<p class="about__text">
+							制作会社・デザイナーの方と連携しやすいよう、構造と命名の一貫性を重視し、
+							後から触る人が迷わないコードを目指しています。
+						</p>
+					</div>
+				</div>
+				<header class="about__section-head">
+					<h3 class="about__section-title" id="about-tools">Skills & Tools</h3>
+				</header>
+
+				<div class="about__tags" role="list">
+					<span class="tag" role="listitem">HTML</span>
+					<span class="tag" role="listitem">SCSS</span>
+					<span class="tag" role="listitem">BEM</span>
+					<span class="tag" role="listitem">JavaScript（ES6）</span>
+					<span class="tag" role="listitem">IntersectionObserver</span>
+					<span class="tag" role="listitem">GSAP</span>
+					<span class="tag" role="listitem">Figma</span>
+					<span class="tag" role="listitem">GitHub / GitHub Pages</span>
+					<span class="tag" role="listitem">ChatGPT（設計補助・最適化）</span>
+				</div>
 			</div>
+		</header>
+	
+		<!-- <section class="about__section" aria-labelledby="about-style">
+			<div class="about__inner">
+				<header class="about__section-head">
+					<h3 class="about__section-title" id="about-style">Working Style</h3>
+				</header>
+
+				<div class="about__split">
+					<div class="about__content">
+						<p class="about__text">
+							デザインの意図を崩さないことを最優先に、読みやすさ・使いやすさを軸に実装します。
+							不要なアニメーションは入れず、目的に合う動きだけを採用します。
+						</p>
+						<p class="about__text">
+							制作会社・デザイナーの方と連携しやすいよう、構造と命名の一貫性を重視し、
+							後から触る人が迷わないコードを目指しています。
+						</p>
+					</div>
+
+					<ul class="about__checklist" aria-label="working style checklist">
+						<li class="about__check">デザイン意図を優先した実装</li>
+						<li class="about__check">保守・修正前提の構造化</li>
+						<li class="about__check">軽量で目的に合うモーション</li>
+						<li class="about__check">SPの見やすさ・操作性を最優先</li>
+					</ul>
+				</div>
 			</div>
-		</section>
+		</section> -->
+
+			
+		<!-- <section class="about__section" aria-labelledby="about-strengths">
+			<div class="about__inner">
+				<header class="about__section-head">
+					<h3 class="about__section-title" id="about-strengths">Strengths</h3>
+					<p class="about__section-lead">実務で扱いやすい実装を意識し、保守性と再利用性を重視しています。</p>
+				</header>
+
+				<div class="about__cards">
+					<article class="skill-card">
+						<h4 class="skill-card__title">HTML / CSS（SCSS・BEM）</h4>
+						<p class="skill-card__text">
+							読みやすく崩れにくい構造を前提に、後から修正しやすい設計で実装します。
+						</p>
+					</article>
+
+					<article class="skill-card">
+						<h4 class="skill-card__title">UI Components</h4>
+						<p class="skill-card__text">
+							モーダル、タブ、アコーディオン等をコンポーネントとして整理し、使い回せる形で構築します。
+						</p>
+					</article>
+
+					<article class="skill-card">
+						<h4 class="skill-card__title">Animation（軽量モーション）</h4>
+						<p class="skill-card__text">
+							IntersectionObserver / GSAP を必要な範囲で使い、ノイズの少ない動きを設計します。
+						</p>
+					</article>
+
+					<article class="skill-card">
+						<h4 class="skill-card__title">Responsive（SP最適化）</h4>
+						<p class="skill-card__text">
+							閲覧比率の高いスマホを優先して、読みやすさ・操作性・崩れにくさを整えます。
+						</p>
+					</article>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- <section class="about__section" aria-labelledby="about-tools">
+			<div class="about__inner">
+				<header class="about__section-head">
+					<h3 class="about__section-title" id="about-tools">Skills & Tools</h3>
+				</header>
+
+				<div class="about__tags" role="list">
+					<span class="tag" role="listitem">HTML</span>
+					<span class="tag" role="listitem">SCSS</span>
+					<span class="tag" role="listitem">BEM</span>
+					<span class="tag" role="listitem">JavaScript（ES6）</span>
+					<span class="tag" role="listitem">IntersectionObserver</span>
+					<span class="tag" role="listitem">GSAP</span>
+					<span class="tag" role="listitem">Figma</span>
+					<span class="tag" role="listitem">GitHub / GitHub Pages</span>
+					<span class="tag" role="listitem">ChatGPT（設計補助・最適化）</span>
+				</div>
+			</div>
+		</section> -->
+
+
 
 	</main>
 
-    <footer class="footer">
+       <footer class="footer">
 		<section class="contact-cta">
 			<div class="l-inner contact-cta__inner">
 				<p class="contact-cta__copy">

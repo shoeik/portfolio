@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORKS｜KAJIYA PORTFOLIO</title>
+    <title>櫻井行政書士事務所｜KAJIYA PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
 </head>
 
-<body class="page page--sub page-works">
+<body class="page page--sub page-sakurai">
 	<header id="header" class="header">
 		<div class="l-inner header__inner">
 			<h1 class="header__logo logo">
@@ -51,62 +51,139 @@
 	</header>
 	<header class="page-head">
 		<div class="page-head__inner">
-			<h1 class="page-head__title">works</h1>
+			<h1 class="page-head__title">櫻井行政書士事務所</h1>
 
 			<nav class="breadcrumb" aria-label="breadcrumb">
 				<ol class="breadcrumb__list">
 					<li class="breadcrumb__item">
-						<a href="/" class="breadcrumb__link">home</a>
+						<a href="/" class="breadcrumb__link">Home</a>
 					</li>
-					<li class="breadcrumb__item breadcrumb__item--current">
-						<a href="/works" class="breadcrumb__link">works</a>
+					<li class="breadcrumb__item">
+						<a href="/works" class="breadcrumb__link">Works</a>
+					</li>
+					<li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
+						櫻井行政書士事務所
 					</li>
 				</ol>
 			</nav>
 		</div>
 	</header>
-	<main class="page-main works">
-		<section class="page-works">
-			<div class="works__inner">
-				<ul class="works-list">
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/sakurai.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/yamakawa.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
+
+	<main class="page-main work-detail">
+
+		<figure class="work-detail__thumb">
+			<img src="images/sakurai.jpg" alt="櫻井行政書士事務所サイトのサムネイル">
+		</figure>
+		<section class="work-detail__overview l-inner">	
+			<!-- <div class="work-detail__inner inner"> -->
+
+				<header class="work-detail__head">
+					<h2 class="work-detail__title">櫻井行政書士事務所</h2>
+					<p class="work-detail__lead">
+						行政書士の専門性・信頼感を伝えるためのコーポレートサイトです。
+						<br>デザイン再現性・UI実装・アニメーションを重視して制作しました。
+						<br>※本制作物ではTOPページのデザイン・実装に注力し、下層はワイヤー段階の想定のみとしています。
+
+					</p>
+				</header>
+				<h3 class="work-detail__heading">overview</h3>
+
+				<dl class="work-detail__list">
+					<div class="work-detail__item">
+						<dt class="work-detail__term">カテゴリー</dt>
+						<dd class="work-detail__desc">Corporate / Professional</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">使用技術</dt>
+						<dd class="work-detail__desc">HTML / SCSS（BEM）/ JavaScript / GSAP / IO</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">担当範囲</dt>
+						<dd class="work-detail__desc">情報設計  / コーディング / UI実装 / レスポンシブ</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">リンク</dt>
+						<dd class="work-detail__desc">
+							<a href="#" target="_blank" class="work-detail__link">公開URL</a><br>
+							<a href="#" target="_blank" class="work-detail__link">GitHub</a>
+						</dd>
+					</div>
+				</dl>
+
+<!-- 
+				デザイン（Figma ベース）
+				落ち着いたブルートーンを軸に余白設計を丁寧に調整し、士業特有の信頼感を表現。
+
+				コーディング（HTML / SCSS / BEM）
+				保守性を意識した構造で、実務想定のコンポーネント分割を実施。
+
+				レスポンシブ最適化（SP優先）
+				スマホユーザーの可読性確保のため、余白と情報量のバランスを細かく調整。
+
+				GSAP / IntersectionObserver を用いたUIアニメーション実装
+				軽量なフェードアニメーション、サイドナビの追従切り替えなど「過剰演出を避けた自然な動き」を実装。
+
+				UIパーツ構築
+				ドロップダウンナビ、CTAボタン、リンクホバーなどをコンポーネント化。 -->
+			<!-- </div> -->
+		</section>
+
+		<section class="work-detail__section l-inner">
+			<!-- <div class="work-detail__inner inner"> -->
+				<h3 class="work-detail__heading">制作の目的</h3>
+				<p class="work-detail__text">
+					士業サイトとしての信頼性・誠実さを重視し、余白と階層構造を丁寧に設計。
+					初めて訪れた相談者が迷わず読み進められる導線づくりを目指しました。
+
+											<!-- 行政書士事務所を想定した、信頼性を重視したコーポレートサイトです。
+落ち着いた配色設計と、業務内容が分かりやすく伝わる構成で、
+“専門性・誠実さ・相談しやすさ” を視覚的に表現することを目的としました。 -->
+				</p>
+			<!-- </div> -->
+		</section>
+
+		<section class="work-detail__section l-inner">
+			<div class="work-detail__inner inner">
+				<h3 class="work-detail__heading">デザイン・UIのポイント</h3>
+				<ul class="work-detail__bullet">
+					<li class="work-detail__bullet-item">青系×ミニマルで信頼性を表現</li>
+					<li class="work-detail__bullet-item">サービス紹介をカードUIで整理</li>
+					<li class="work-detail__bullet-item">階層構造を強調した読みやすいUI</li>
+					<li class="work-detail__bullet-item">SP優先で視線誘導を最適化</li>
+
+
+					<!-- 余白とタイポグラフィで “落ち着き” と “読みやすさ” を最優先に設計
+士業サイト特有の「硬さ」になりすぎないよう、柔らかいグラデーションや抽象背景を採用
+CTA ボタンのホバーアニメーション・リンクの下線アニメーションなど、「控えめな動き」で質感を向上
+透明感のあるヘッダーモーション（スクロールに応じた挙動） -->
 				</ul>
-			</div>
 			</div>
 		</section>
 
-	</main>
+		<section class="work-detail__section l-inner">
+			<!-- <div class="work-detail__inner inner"> -->
+				<h3 class="work-detail__heading">実装のポイント</h3>
+				<ul class="work-detail__bullet">
+					<li class="work-detail__bullet-item">SCSS + BEM設計による保守性の高いコード</li>
+					<li class="work-detail__bullet-item">IntersectionObserverで軽量アニメーション</li>
+					<li class="work-detail__b	ullet-item">必要な箇所のみGSAP使用し負荷を軽減</li>
+					<li class="work-detail__bullet-item">UIパーツをコンポーネント化して再利用性UP</li>
 
-    <footer class="footer">
+					<!-- BEM設計でセクション単位の分離性を高め、後からの変更に強い構造に
+header（ドロップダウン + スクロール挙動）をJSで最適化
+IntersectionObserver での軽量フェードイン
+デバイス幅に応じた動作切替（PC：hover・SP：タップ開閉）
+画像の遅延読み込みでパフォーマンス改善
+UIパーツはポートフォリオの別ページと共通化し再利用できる設計に -->
+				</ul>
+			<!-- </div> -->
+		</section>
+
+	</main>
+	<footer class="footer">
 		<section class="contact-cta">
 			<div class="l-inner contact-cta__inner">
 				<p class="contact-cta__copy">

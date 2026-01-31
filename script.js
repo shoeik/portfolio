@@ -1,5 +1,9 @@
 
 
+
+
+
+
 	const cursor = document.querySelector('.custom-cursor');
 	const hoverTargets = document.querySelectorAll('.hover-target');
 	
@@ -15,6 +19,29 @@
 		
 	});
 	
+
+
+
+	
+
+const hamburger = document.querySelector('.header__hamburger');
+const nav = document.querySelector('.global-nav');
+// const nav = document.getElementById('gnav');
+
+
+
+
+
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('js-open');
+    nav.classList.toggle('js-open');
+    // document.body.classList.toggle('js-active');
+});
+
+
+
+
+
 	
 	const targets = document.querySelectorAll('.js-target');
 	
@@ -186,3 +213,169 @@
 			}
 		});
 	});
+
+
+
+
+
+
+	(() => {
+	/* =========================
+		Accessibility
+	========================= */
+
+	const prefersReducedMotion = window.matchMedia(
+		'(prefers-reduced-motion: reduce)'
+	).matches;
+
+	/* =========================
+		Lenis setup
+	========================= */
+
+	let lenis = null;
+
+	if (!prefersReducedMotion) {
+		lenis = new Lenis({
+			lerp: 0.08,
+			smoothWheel: true,
+			smoothTouch: false,
+		});
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+		requestAnimationFrame(raf);
+	}
+
+	/* =========================
+		GSAP setup
+	========================= */
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	if (lenis) {
+		// Lenis と ScrollTrigger を同期（bodyスクロール想定）
+		lenis.on('scroll', ScrollTrigger.update);
+	}
+
+
+	const targetPanel = document.querySelector('[data-theme-trigger]');
+    if (!targetPanel) return;
+
+	/* =========================
+		Reduced motion fallback
+	========================= */
+
+	if (prefersReducedMotion) {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach(entry => {
+					if (!entry.isIntersecting) return;
+
+					entry.target.style.setProperty(
+						'--bg',
+						entry.target.dataset.bg
+					);
+					entry.target.style.setProperty(
+						'--color',
+						entry.target.dataset.color
+					);
+				});
+			},
+			{ threshold: 0.7 }
+		);
+
+		observer.observe(targetPanel);
+		return;
+	}
+
+	/* =========================
+		GSAP Theme Animation
+	========================= */
+
+	gsap.to(targetPanel, {
+		'--bg': targetPanel.dataset.bg,
+		'--color': targetPanel.dataset.color,
+		ease: 'none',
+		scrollTrigger: {
+			trigger: targetPanel,
+			start: 'top 0%',
+
+			end: 'top -20%',
+			scrub: true,
+			invalidateOnRefresh: true,
+		},
+	});
+
+	ScrollTrigger.refresh();
+})();
+
+
+
+
+
+
+// (() => {
+// 	/* =========================
+// 		Accessibility checks
+// 	========================= */
+
+// 	const prefersReducedMotion = window.matchMedia(
+// 		'(prefers-reduced-motion: reduce)'
+// 	).matches;
+
+// 	/* =========================
+// 		Elements
+// 	========================= */
+
+// 	const sections = document.querySelectorAll('.section[data-bg]');
+// 	if (!sections.length) return;
+
+// 	/* =========================
+// 		Reduced motion fallback
+// 	========================= */
+
+// 	if (prefersReducedMotion) {
+// 		// IntersectionObserverで「切り替えのみ」
+// 		const observer = new IntersectionObserver(
+// 			(entries) => {
+// 				entries.forEach(entry => {
+// 					if (entry.isIntersecting) {
+// 						document.body.style.backgroundColor =
+// 							entry.target.dataset.bg;
+// 					}
+// 				});
+// 			},
+// 			{ threshold: 0.6 }
+// 		);
+
+// 		sections.forEach(section => observer.observe(section));
+// 		return;
+// 	}
+
+// 	/* =========================
+// 		GSAP setup
+// 	========================= */
+
+// 	gsap.registerPlugin(ScrollTrigger);
+
+// 	sections.forEach((section, index) => {
+// 		const bgColor = section.dataset.bg;
+
+// 		gsap.to(document.body, {
+// 			backgroundColor: bgColor,
+// 			ease: 'none',
+// 			scrollTrigger: {
+// 				trigger: section,
+// 				start: 'top 60%',
+// 				end: 'bottom 40%',
+// 				scrub: true,
+
+// 				// アクセシビリティ配慮
+// 				invalidateOnRefresh: true,
+// 			},
+// 		});
+// 	});
+// })();
+

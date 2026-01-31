@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORKS｜KAJIYA PORTFOLIO</title>
+    <title>山川精密工業株式会社｜KAJIYA PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
 </head>
-
-<body class="page page--sub page-works">
+<body class="page page--sub page-works-detail">
 	<header id="header" class="header">
 		<div class="l-inner header__inner">
 			<h1 class="header__logo logo">
@@ -51,62 +50,105 @@
 	</header>
 	<header class="page-head">
 		<div class="page-head__inner">
-			<h1 class="page-head__title">works</h1>
+			<h1 class="page-head__title">山川精密工業株式会社</h1>
 
 			<nav class="breadcrumb" aria-label="breadcrumb">
 				<ol class="breadcrumb__list">
 					<li class="breadcrumb__item">
-						<a href="/" class="breadcrumb__link">home</a>
+						<a href="/" class="breadcrumb__link">Home</a>
 					</li>
-					<li class="breadcrumb__item breadcrumb__item--current">
-						<a href="/works" class="breadcrumb__link">works</a>
+					<li class="breadcrumb__item">
+						<a href="/works" class="breadcrumb__link">Works</a>
+					</li>
+					<li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
+						山川精密工業株式会社
 					</li>
 				</ol>
 			</nav>
 		</div>
 	</header>
-	<main class="page-main works">
-		<section class="page-works">
-			<div class="works__inner">
-				<ul class="works-list">
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/sakurai.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
-					<li class="card card--work top-works__item">
-						<a href="" class="card__link">
-							<div class="card__textarea l-inner">
-								<h3 class="card__title">
-									山川精密工業株式会社｜コーポレートサイト制作（架空案件）
-								</h3>
-								<p class="card__text">
-									重厚感と正確性を両立するビジュアル設計で、精密加工の信頼性と技術力を視覚的に訴求。
-								</p>
-							</div>
-							<div class="card__thumb">
-								<img src="images/yamakawa.jpg" alt="" loading="lazy">
-							</div>
-						</a>
-					</li>
+
+	<main class="page-main">
+
+		<figure class="work-detail__thumb">
+			<img src="images/yamakawa.jpg" alt="山川精密工業株式会社のサムネイル">
+		</figure>
+		<section class="work-detail">	
+			<div class="work-detail__inner l-inner">
+
+				<header class="work-detail__head">
+					<h2 class="work-detail__title">山川精密工業株式会社</h2>
+					<p class="work-detail__lead">
+						精密金属加工の専門性と実績を、一目で理解できるよう整理したコーポレートサイトです。事業内容・技術紹介・制作実績を分かりやすく構造化し、BtoBパートナーからの信頼と問い合わせにつながる情報設計を行いました。
+						<br>※本案件ではTOPページのデザイン・実装に注力し、下層はワイヤー段階の想定のみとしています。
+					</p>
+				</header>
+				<h3 class="work-detail__heading">overview</h3>
+
+				<dl class="work-detail__list">
+					<div class="work-detail__item">
+						<dt class="work-detail__term">カテゴリー</dt>
+						<dd class="work-detail__desc">Corporate / Manufacturing</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">使用技術</dt>
+						<dd class="work-detail__desc">HTML / SCSS（BEM）/ JavaScript / GSAP / IO</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">担当範囲</dt>
+						<dd class="work-detail__desc">情報設計 / コーディング / UI実装 / レスポンシブ</dd>
+					</div>
+
+					<div class="work-detail__item">
+						<dt class="work-detail__term">リンク</dt>
+						<dd class="work-detail__desc">
+							<a href="#" target="_blank" class="work-detail__link">公開URL</a><br>
+							<a href="#" target="_blank" class="work-detail__link">GitHub</a>
+						</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
+
+		<section class="work-detail__section">
+			<div class="work-detail__inner l-inner">
+				<h3 class="work-detail__heading">制作の目的</h3>
+				<p class="work-detail__text">
+					精密加工の「何ができる会社か」を具体的に伝えるため、
+					<br>事業内容・技術・制作実績を段階的に読み進められる構成に再設計しました。
+					<br>新規取引先が、対応可能な加工内容や強みをすばやく把握できることを目的としています。
+				</p>
+			</div>
+		</section>
+
+		<section class="work-detail__section">
+			<div class="work-detail__inner l-inner">
+				<h3 class="work-detail__heading">デザイン・UIのポイント</h3>
+				<ul class="work-detail__bullet">
+					<li class="work-detail__bullet-item">余白とタイポグラフィを整え、BtoBらしい信頼感と読みやすさを両立</li>
+					<li class="work-detail__bullet-item">事業内容」「技術紹介」「制作実績」をセクション分割し、役割ごとに情報を整理</li>
+					<li class="work-detail__bullet-item">製品写真とキャプションで、技術の具体性・使用シーンをイメージしやすく表現</li>
+					<li class="work-detail__bullet-item">SP優先でレイアウトを設計し、スクロールの流れに沿った視線誘導を意識</li>
 				</ul>
 			</div>
+		</section>
+
+		<section class="work-detail__section">
+			<div class="work-detail__inner l-inner">
+				<h3 class="work-detail__heading">実装のポイント</h3>
+				<ul class="work-detail__bullet">
+					<li class="work-detail__bullet-item">SCSS + BEM設計により、セクション単位でスタイルをモジュール化し保守性を向上</li>
+					<li class="work-detail__bullet-item">IntersectionObserverでフェードインなどの軽量アニメーションを実装</li>
+					<li class="work-detail__bullet-item">必要な箇所のみGSAPを用いて、見出しやキービジュアルにメリハリのあるモーションを追加</li>
+					<li class="work-detail__bullet-item">ボタン、カード、セクションヘッダーなどをコンポーネント化し、別ページへの転用も想定した実装としました</li>
+				</ul>
 			</div>
 		</section>
 
 	</main>
-
-    <footer class="footer">
+	<footer class="footer">
 		<section class="contact-cta">
 			<div class="l-inner contact-cta__inner">
 				<p class="contact-cta__copy">
